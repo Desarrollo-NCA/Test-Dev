@@ -1,0 +1,320 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: Poppins;
+}
+
+/*-----------------------MEDIAQUERY------------------------*/
+@media(max-width: 750px){
+
+	header{
+		position: fixed;
+		width: 100%;
+		z-index: 10;
+		display: flex;
+		justify-content: center;
+	}
+
+	.containerHeader{
+		margin-top: 10px;
+		position: fixed;
+		display: flex;
+		justify-content: space-between;
+		width: 90%;
+	}
+
+	header img{
+		width: 150px;
+	}
+
+	.navbar button{
+		background: white;
+		border: none;
+		display: flex;
+		justify-content: center;
+		padding: 3px;
+		cursor: pointer;
+		color: #2c2c54;
+		border-radius: 5px;
+	}
+
+	div.menu nav{
+		visibility: hidden;
+		position: absolute;
+		display: flex;
+		flex-direction: column;
+		background:  white;
+		margin-top: 20px;
+		width: 200px;
+	}
+
+	div.menu nav.show{
+		visibility: visible;
+	}
+
+	nav a{
+		text-decoration: none;
+		color: #2c2c54;
+		line-height: 50px;
+	}
+
+	nav a p{
+		margin: 10px 15px;
+	}
+
+	nav a:hover{
+		background-color: #cccccc;
+	}
+
+	section{
+		width: 100%;
+		height: 100%;
+		position: relative;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	section.home{
+		background-image: url('../img/bgHome.jpg');
+		background-size: cover;
+		height: 100vh;
+		padding: 0 20px;
+	}
+
+	section.aboutUs{
+		background: #ecf0f1;
+	}
+
+	div.titleHome{
+		position: relative;
+		width: 100%;
+		text-align: center;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	div.borderTitle{
+		position: relative;
+		width: 25%;
+		line-height: 15px;
+		border-top: 3px solid #2c2c54;
+	}
+
+	h2.title{
+		font-size: 55px;
+		font-weight: bold;
+		color: #2c2c54;
+	}
+
+	div.sectionName{
+		position: absolute;
+		margin-top: 50px;
+		margin-left: 3px;
+		background:  white;
+		display: inline-block;
+		padding: 10px;
+		font-weight: bolder;
+	}
+	
+	/*-----------------------------------------ABOUTUS---------------------*/
+	
+	div.aboutUsBox{
+		height: 100%;
+		color: #2c2c54;
+		padding: 0 20px;
+	}
+
+
+	div.aboutUsDescription{
+		margin-top: 100px;
+	}
+	
+	.aboutUsBox h5{
+		margin-top: 50px;
+		font-weight: normal;
+		font-size: 35px;
+		text-align: center;
+	}
+
+	.aboutUsBox h5 span{
+		font-weight: bolder;
+	}
+
+	.aboutUsBox p.aboutDescription{
+		margin: 40px auto;
+	}
+
+	/*---------------------------------------PROJECTS--------------------------*/
+
+	section.projects{
+		height: 100vh;
+	}
+
+	div.projectsBox{
+		
+		height: 100%;
+		color: #2c2c54;
+		width: 100%;
+	}
+
+	.projectsBox .sectionName{
+		margin: 50px 20px;
+	}
+
+	div.navigationArrows{
+		width: 90%;
+		display: flex;
+		justify-content: space-between;
+		position: absolute;
+		top: 40%;
+		margin: 0 5%;
+	}
+
+	div.navigationArrows button.arrows{
+		cursor: pointer;
+		background: white;
+		padding: 10px;
+		border: none;
+		display: flex;
+		color: #2c2c54;
+	}
+
+	div.project{
+		display: none;
+		height: 100%;
+		background-image: url('../img/bgProjects1.jpg');
+		background-size: cover;
+	}
+
+	div.project2{
+		display: none;
+		height: 100%;
+		background-image: url('../img/bgProjects2.jpg');
+		background-size: cover;
+	}
+
+	div.project3{
+		display: none;
+		height: 100%;
+		background-image: url('../img/bgProjects3.jpg');
+		background-size: cover;
+	}
+
+	div.showProject{
+		display: block;
+	}
+
+	div.projectName{
+		width: 90%;
+		background-color: white;
+		padding: 10px;
+		margin: 0 20px;
+		position: absolute;
+		bottom: 20px;
+	}
+
+	/*-----------------------------CONTACT-------------------------*/
+
+	section.contact{
+		height: 100%;
+		background-color: #2c2c54;
+		color: white;
+	}
+
+	div.contactBox{
+		width: 100%;
+		padding: 0 20px;
+	}
+
+	div.contactBox .sectionName{
+		color: #2c2c54;
+	}
+
+	div.contactInfo{
+		margin: 100px 11px auto 11px
+	}
+
+	.contactTitle{
+		margin-top: 10px;
+		font-weight: bold;
+		font-size: 30px;
+	}
+
+	div.contactBox ul{
+
+	}
+
+	ul li{
+		display: flex;
+		margin: 25px auto;
+	}
+
+	ul li span{
+		margin-right: 15px;
+	}
+
+	p.email{
+		text-decoration: underline;
+	}
+
+	div.socialNet{
+		width: 55%;
+		font-size: 30px;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	div.socialNet a{
+		color: white;
+	}
+
+	div.socialNet a:hover{
+		color: grey;
+	}
+
+	div.hiring{
+		margin: 20px auto;
+	}
+
+	p.hiringTitle{
+		margin: 20px auto;
+	}
+
+	p.personalMessage{
+		margin-bottom: 20px;
+	}
+
+	form input, textarea{
+		margin: 15px auto;
+		padding: 10px;
+		width: 100%;
+		background-color: #121221;
+		border: none;
+		color: white;
+	}
+
+	form input, textarea::placeholder{
+		color: white;
+	}
+
+	input.sendMessage{
+		background-color: white;
+		color: #2c2c54;
+		font-weight: bold;
+		width: 60%;
+		float: right;
+		margin-bottom: 25px;
+	}
+
+	footer{
+		width: 100%;
+		height: 70vh;
+		background-image: url('../img/bgContact.jpg');
+		background-size: cover ;
+		background-position: 490px 20px;
+	}
+
+}
