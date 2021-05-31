@@ -144,7 +144,7 @@
 		margin-top: 100px;
 	}
 	
-	.aboutUsBox p{
+	.aboutUsBox h5{
 		margin-top: 50px;
 		font-weight: normal;
 		font-size: 35px;
@@ -385,7 +385,7 @@
 		margin: 30px auto;
 	}
 
-	.aboutUsBox p{
+	.aboutUsBox h5{
 		margin: 40px auto;
 		width: 55%;
 	}
