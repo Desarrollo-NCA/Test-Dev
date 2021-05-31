@@ -1,22 +1,26 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
+	<title>Airhitect | dedicated to the future</title>
+	<meta name="author" content="Contreras Nicolás" />
+	<meta name="copyright" content="Contreras Nicolás" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="shortcut icon" href="">
 	<meta name="description" content="Airhitect, lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 	tempor incididunt ut labore et dolore magna aliqua.">
+	<meta name="keywords" content="Airhitect,arquitectura,moderno,casas,construccion,edificios.">
 	<meta charset="utf-8">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Material+Icons&display=swap" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Material+Icons&family=Material+Icons+Outlined&display=swap" rel="stylesheet">
+	<meta name="Revisit-after" content="15 days">
+	<meta name="robots" content="ALL">
 	<script src="https://kit.fontawesome.com/b8a41a027a.js" crossorigin="anonymous"></script>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<title>Airhitect</title>
 </head>
 <body>
 	<header>
 		<div class="containerHeader">
 		<div class="navbar">
-			<button
+			<button class="btn-navbar btn-menu" 
 			onClick="showMenu()"
 			>
 				<span class="material-icons">menu</span>
@@ -30,7 +34,13 @@
 				</nav>
 			</div>
 		</div>
-		<img src="img/logoAirhitect.png" alt="Logo Airhitect">
+		<img id="logoAirhitect" class="logoAir" src="img/logoAirhitect.png" alt="Logo Airhitect">
+		<button class="btn-navbar btn-contact">
+			<span class="material-icons-outlined">
+				contact_page
+			</span>
+			contact
+		</button>
 		</div>
 	</header>
 	<main>
@@ -38,7 +48,10 @@
 			<div class="titleHome">
 				<div class="borderTitle">
 				</div>
-				<h2 class="title">dedicated to the future</h2>
+				<div class="title">
+					<h1 class="title">Airhitect</h1>
+					<h2 class="title">dedicated to the future</h2>
+				</div>
 				<div class="borderTitle">
 				</div>
 			</div>
@@ -49,10 +62,12 @@
 					<p>about us</p>
 				</div>
 				<div class="aboutUsDescription">
-				<h5>Lorem ipsum dolor sit amet. <span><b>Veritatis libero cupiditate blanditiis</b></span> recusandae ipsam</h5>
+				<h5>Lorem ipsum dolor sit amet. <span><b>Veritatis libero cupiditate blanditiis</b></span> recusandae ipsam ipsa assumenda laboriosam.</h5>
+				<div class="descriptionText">
 				<p class="aboutDescription">Aliquam, ipsa assumenda laboriosam, doloremque laudantium neque. Praesentium facilis eius enim consequatur</p>
 				<p class="aboutDescription">Cumque numquam dolor facilis maxime accusantium eum officiis voluptas eveniet molestias exercitationem non neque</p>
 				<p class="aboutDescription">Modi blanditiis atque ut quae enim cum, non reprehenderit, vero ipsum voluptatibus error veniam mollitia quaerat</p>
+				</div>
 				</div>
 			</div>
 		</section>
@@ -77,24 +92,26 @@
 					</span>
 				</button>
 				</div>
-				<div id="project1" class="project showProject">
+				<div class="roulette">
+				<div id="project1" class="project showProject order1">
 					<div class="projectName">
 						<h4>Project Name</h4>
 						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
 					</div>
 				</div>
-				<div id="project2" class="project2">
+				<div id="project2" class="project2 order2">
 					<div class="projectName">
 						<h4>Project Name2</h4>
 						<p>Excepteur sint occaecat cupidatat non
 						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 					</div>
 				</div>
-				<div id="project3" class="project3">
+				<div id="project3" class="project3 order3">
 					<div class="projectName">
 						<h4>Project Name3</h4>
 						<p>Quaerat architecto facilis quia, at libero, earum delectus.</p>
 					</div>
+				</div>
 				</div>
 			</div>
 		</section>
@@ -104,12 +121,13 @@
 					<p>contact</p>
 				</div>
 				<div class="contactInfo">
+					<div class="container1">
 					<p class="contactTitle">Contact us via email, phone or come by into our office!</p>
 					<ul>
 						<li>
 							<span class="material-icons">
 								mail_outline
-							</span><p class="email"> info@airhitect.com</p>
+							</span><a href="mailto: info@airhitect.com"><p class="email"> info@airhitect.com</p></a>
 						</li>
 						<li>
 							<span class="material-icons">phone_in_talk</span>
@@ -134,6 +152,8 @@
 							</div>
 						</li>
 					</ul>
+					</div>
+					<div class="container1">
 					<div class="socialNet">
 						<a href=""><i class="fab fa-linkedin"></i></a>
 						<a href=""><i class="fab fa-facebook-square"></i></a>
@@ -143,22 +163,23 @@
 					<div class="hiring">
 						<p class="hiringTitle"><b>We are hiring!</b></p>
 						<p class="personalMessage">We are looking for new talents to our team! If you think you are the rigth person for AIRhitect send as an email with your CV and portfolio. Don't forget to write a little about yourself!</p>
-						<p class="email">job@airhitect.com</p>
+						<a href="mailto: job@airhitect.com"><p class="email">job@airhitect.com</p></a>
+					</div>
 					</div>
 					<form action="">
 						<input type="text" placeholder="Name">
 						<input type="email" placeholder="E-mail">
 						<input type="text" placeholder="Subject">
-						<textarea name="" id="" rows="10" placeholder="Message"></textarea>
+						<textarea name="" id="" rows="8" placeholder="Message"></textarea>
 						<input class="sendMessage" type="submit" value="SEND MESSAGE">
 					</form>
-					
+				</div>
+				<div class="map">
 				</div>
 			</div>
 		</section>
 	</main>
 	<footer>
-
 	</footer>
 </body>
 <script type="text/javascript" src="js/functions.js"></script>

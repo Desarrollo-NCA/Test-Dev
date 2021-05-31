@@ -6,8 +6,6 @@
 }
 
 /*-----------------------MEDIAQUERY------------------------*/
-@media(max-width: 750px){
-
 	header{
 		position: fixed;
 		width: 100%;
@@ -28,15 +26,20 @@
 		width: 150px;
 	}
 
-	.navbar button{
+	button.btn-navbar{
 		background: white;
 		border: none;
 		display: flex;
 		justify-content: center;
-		padding: 3px;
+		align-items: center;
+		padding: 5px;
 		cursor: pointer;
 		color: #2c2c54;
 		border-radius: 5px;
+	}
+
+	button.btn-navbar.btn-contact{
+		visibility: hidden;
 	}
 
 	div.menu nav{
@@ -101,6 +104,12 @@
 		width: 25%;
 		line-height: 15px;
 		border-top: 3px solid #2c2c54;
+	}
+
+	h1.title{
+		font-size: 30px;
+		font-weight: bold;
+		color: #2c2c54;
 	}
 
 	h2.title{
@@ -182,6 +191,10 @@
 		color: #2c2c54;
 	}
 
+	div.roulette{
+		height: 100%;
+	}
+
 	div.project{
 		display: none;
 		height: 100%;
@@ -252,6 +265,10 @@
 		margin: 25px auto;
 	}
 
+	ul li a{
+		color: white;
+	}
+
 	ul li span{
 		margin-right: 15px;
 	}
@@ -277,6 +294,10 @@
 
 	div.hiring{
 		margin: 20px auto;
+	}
+
+	.hiring a{
+		color: white;
 	}
 
 	p.hiringTitle{
@@ -309,12 +330,159 @@
 		margin-bottom: 25px;
 	}
 
-	footer{
+/*-------------------------------------------MEDIAQUERY-----------------------------------*/
+
+@media(min-width: 750px){
+
+	button.btn-navbar.btn-contact{
+		visibility: visible;
+	}
+
+	button.btn-navbar.btn-menu:after{
+		content: ' menu';
+	}
+
+	.logoAir{
+		color: #2c2c54;
+	}
+
+	div.titleHome{
+		position: relative;
+		width: 90%;
+		text-align: center;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+	}
+
+	div.title{
+		width: 60%;
+	}
+
+	div.borderTitle{
+		position: relative;
+		width: 15%;
+		border-top: 3px solid #2c2c54;
+	}
+
+	section.aboutUs{
+		height: 100vh;
+	}
+
+	div.aboutUsDescription{
+		width: 70%;
+		margin: 85px auto;
+	}
+
+	.descriptionText{
+		display: flex;
+		justify-content: space-around;
+		margin: 30px auto;
+	}
+
+	.aboutUsBox h5{
+		margin: 40px auto;
+		width: 55%;
+	}
+	
+	.aboutUsBox p.aboutDescription{
+		margin: 40px 10px;
+	}
+
+	div.roulette{
+		display: flex;
 		width: 100%;
-		height: 70vh;
+		height: 100%;
+	}
+
+	div .project, .project2, .project3{
+		width: 33.33%;
+	}
+
+	div.project{
+
+		display: block;
+	}
+
+	div.project2{
+
+		display: block;
+	}
+
+	div.project3{
+
+		display: block;
+	}
+
+	div.projectName{
+		width: 30%;
+	}
+
+	.order1{
+		order: 2;
+	}
+
+	.order2{
+		order: 1;
+	}
+
+	.order3{
+		order: 3;
+	}
+
+	div.contactBox{
+		display: flex;
+	}
+
+	div.contactInfo{
+		width: 50%;
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	div.container1{
+		width: 50%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	p.contactTitle{
+		width: 80%;
+	}
+
+	div.socialNet{
+		margin-top: 50px;
+		width: 80%;
+	}
+
+	form{
+		width: 80%;
+	}
+
+	form input{
+		width: 60%;
+	}
+
+	form textarea{
+		width: 100%;
+	}
+
+	input.sendMessage{
+		width: 50%;
+	}
+
+	div.map{
+		position: absolute;
+		right: 0;
+		width: 40%;
+		z-index: 9;
+		height: 100%;
 		background-image: url('../img/bgContact.jpg');
 		background-size: cover ;
 		background-position: 490px 20px;
 	}
-
 }
+
+
